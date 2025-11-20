@@ -253,7 +253,7 @@ int main()
 }
 ```
 
-## 8. [Way to long words](https://codeforces.com/contest/158/problem/A)
+## 8. [Way to long words](https://codeforces.com/problemset/problem/71/A)
 
 ```c++
 #include <bits/stdc++.h>
@@ -324,7 +324,7 @@ int main()
 }
 ```
 
-## 10. [New year & Hurry](https://codeforces.com/contest/158/problem/A)
+## 10. [New year & Hurry](https://codeforces.com/problemset/problem/750/A)
 
 ```c++
 #include <bits/stdc++.h>
