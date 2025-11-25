@@ -208,7 +208,7 @@ using namespace std;
 
 int main()
 {
-          int n, length;
+          int n;
           cin >> n;
 
           while (n--)
@@ -216,15 +216,15 @@ int main()
                     string word;
                     cin >> word;
 
-                    length = word.length();
+                    int length = word.length();
 
-                    if (length > 10)
+                    if (word.length() > 10)
                     {
                               cout << word[0] << length - 2 << word[length - 1] << "\n";
                     }
                     else
                     {
-                              cout << word << endl;
+                              cout << word << '\n';
                     }
           }
 
