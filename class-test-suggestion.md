@@ -240,32 +240,20 @@ using namespace std;
 
 int main()
 {
-          string word1;
-          string word2;
-          cin >> word1 >> word2;
+          string a, b;
+          cin >> a >> b;
 
-          for (int i = 0; i < word1.length(); i++)
+          for (int i = 0; i < a.size(); i++)
           {
-                    char c1 = word1[i];
-                    char c2 = word2[i];
-
-                    word1[i] = tolower(c1);
-                    word2[i] = tolower(c2);
+                    a[i] = tolower(a[i]);
+          }
+          for (int i = 0; i < b.size(); i++)
+          {
+                    b[i] = tolower(b[i]);
           }
 
-          if (word1 > word2)
-          {
-                    cout << 1;
-          }
-          else if (word1 < word2)
-          {
-                    cout << -1;
-          }
-
-          else if (word1 == word2)
-          {
-                    cout << 0;
-          }
+          cout << (a > b ? 1 : a < b ? -1
+                                     : 0);
 
           return 0;
 }
@@ -279,36 +267,24 @@ using namespace std;
 
 int main()
 {
-          int problems, time;
-          cin >> problems >> time;
+          int n, t;
+          cin >> n >> t;
 
-          int maxTime = 240;
-          int leftTime = maxTime - time;
+          int left = 240 - t;
+          int solved = 0;
+          int timeNeeded = 0;
 
-          int count = 0;
-          int takenTime = 0;
-          int timePerQuestion = 5;
-          int testCases = problems;
-
-          while (testCases > 0)
+          for (int i = 1; i <= n; i++)
           {
-                    count++;
-                    takenTime += timePerQuestion;
-                    timePerQuestion += 5;
-
-                    if (takenTime > leftTime)
+                    timeNeeded += 5 * i;
+                    if (timeNeeded > left)
                     {
-                              count--;
-                              cout << count;
                               break;
                     }
-                    testCases--;
+                    solved++;
           }
 
-          if (testCases == 0)
-          {
-                    cout << problems;
-          }
+          cout << solved;
 
           return 0;
 }
