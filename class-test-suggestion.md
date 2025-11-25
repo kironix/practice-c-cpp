@@ -86,20 +86,12 @@ using namespace std;
 
 int main()
 {
-          int n;
+    int n;
+    cin >> n;
 
-          cin >> n;
+    cout << ((n % 2 == 0 && n > 2) ? "YES" : "NO");
 
-          if (n % 2 == 0 && n > 2)
-          {
-                    cout << "YES";
-          }
-          else
-          {
-                    cout << "NO";
-          }
-
-          return 0;
+    return 0;
 }
 ```
 
@@ -220,7 +212,7 @@ int main()
 
                     if (word.length() > 10)
                     {
-                              cout << word[0] << length - 2 << word[length - 1] << "\n";
+                              cout << word[0] << length - 2 << word[length - 1] << '\n';
                     }
                     else
                     {
