@@ -135,23 +135,16 @@ int main()
           cin >> n;
 
           int x = 0;
-          string v;
 
-          for (int i = 0; i < n; ++i)
+          while (n--)
           {
-                    cin >> v;
+                    string s;
+                    cin >> s;
 
-                    if (v[1] == '+')
-                    {
-                              x++;
-                    }
-                    else
-                    {
-                              x--;
-                    }
+                    x += (s[1] == '+') ? 1 : -1;
           }
 
-          cout << x << endl;
+          cout << x;
 
           return 0;
 }
