@@ -6,15 +6,16 @@ using namespace std;
 
 int main()
 {
-          int n;
-          cin >> n;
+          int t;
+          cin >> t;
 
-          while (n--)
+          while (t--)
           {
                     int size, sume = 0, sumo = 0, k = 0;
                     cin >> size;
 
                     int arr[size];
+
                     if (size % 4 == 0)
                     {
                               cout << "YES" << "\n";
