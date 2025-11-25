@@ -6,39 +6,47 @@ using namespace std;
 
 int main()
 {
-          int t;
-          cin >> t;
+          int n;
+          cin >> n;
 
-          while (t--)
+          while (n--)
           {
-                    int n;
-                    cin >> n;
+                    int size, sume = 0, sumo = 0, k = 0;
+                    cin >> size;
 
-                    int m = n / 2;
-
-                    if (m % 2 == 1)
+                    int arr[size];
+                    if (size % 4 == 0)
                     {
-                              cout << "NO\n";
-                              continue;
+                              cout << "YES" << "\n";
+
+                              for (int i = 2; i <= size; i += 2)
+                              {
+                                        arr[k] = i;
+                                        k++;
+                                        sume += i;
+                              }
+
+                              for (int i = 1; k < size - 1; i += 2)
+                              {
+                                        arr[k] = i;
+                                        sumo += i;
+                                        k++;
+                              }
+
+                              arr[k] = sume - sumo;
+
+                              for (int i = 0; i < size; i++)
+                              {
+                                        cout << arr[i] << " ";
+                              }
+                              cout << "\n";
                     }
-
-                    cout << "YES\n";
-
-                    for (int i = 1; i <= m; ++i)
+                    else
                     {
-                              cout << 2 * i << (i == n ? '\n' : ' ');
+                              cout << "NO" << "\n";
                     }
-
-                    int printed = 0;
-                    
-                    for (int i = 0; i < m - 1; ++i)
-                    {
-                              cout << (2 * i + 1) << ' ';
-                              ++printed;
-                    }
-
-                    cout << (3 * m - 1) << '\n';
           }
+
           return 0;
 }
 ```
