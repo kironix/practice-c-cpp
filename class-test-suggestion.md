@@ -60,8 +60,6 @@ using namespace std;
 
 int main()
 {
-    int a, b;
-
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -71,13 +69,10 @@ int main()
 
             if (x == 1)
             {
-                a = i;
-                b = j;
+                cout << abs(i - 2) + abs(j - 2);
             }
         }
     }
-
-    cout << abs(a - 2) + abs(b - 2);
 
     return 0;
 }
