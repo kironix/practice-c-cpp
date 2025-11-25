@@ -186,14 +186,14 @@ int main()
           int t;
           cin >> t;
 
-          for (int i = 0; i < t; i++)
+          while (t--)
           {
                     int n;
                     cin >> n;
 
                     int sum = (n / 10) + (n % 10);
 
-                    cout << sum << endl;
+                    cout << sum << '\n';
           }
 
           return 0;
