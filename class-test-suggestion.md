@@ -158,21 +158,15 @@ using namespace std;
 
 int main()
 {
-          int problems, count = 0;
+          int n, count = 0;
+          cin >> n;
 
-          cin >> problems;
-
-          for (int i = 0; i < problems; i++)
+          while (n--)
           {
                     int a, b, c, sum;
                     cin >> a >> b >> c;
 
-                    sum = a + b + c;
-
-                    if (sum >= 2)
-                    {
-                              count++;
-                    }
+                    count += (a + b + c) >= 2;
           }
 
           cout << count;
