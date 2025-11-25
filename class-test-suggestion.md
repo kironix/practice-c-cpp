@@ -250,10 +250,10 @@ using namespace std;
 
 int main()
 {
-          int n, t;
-          cin >> n >> t;
+          int n, k;
+          cin >> n >> k;
 
-          int left = 240 - t;
+          int left = 240 - k;
           int solved = 0;
           int timeNeeded = 0;
 
