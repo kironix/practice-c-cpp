@@ -11,32 +11,32 @@ int main()
 
           while (t--)
           {
-                    int size, sume = 0, sumo = 0, k = 0;
-                    cin >> size;
+                    int n, sumEven = 0, sumOdd = 0, k = 0;
+                    cin >> n;
 
-                    int arr[size];
+                    int arr[n];
 
-                    if (size % 4 == 0)
+                    if (n % 4 == 0)
                     {
                               cout << "YES" << "\n";
 
-                              for (int i = 2; i <= size; i += 2)
+                              for (int i = 2; i <= n; i += 2)
                               {
                                         arr[k] = i;
                                         k++;
-                                        sume += i;
+                                        sumEven += i;
                               }
 
-                              for (int i = 1; k < size - 1; i += 2)
+                              for (int i = 1; k < n - 1; i += 2)
                               {
                                         arr[k] = i;
-                                        sumo += i;
+                                        sumOdd += i;
                                         k++;
                               }
 
-                              arr[k] = sume - sumo;
+                              arr[k] = sumEven - sumOdd;
 
-                              for (int i = 0; i < size; i++)
+                              for (int i = 0; i < n; i++)
                               {
                                         cout << arr[i] << " ";
                               }
