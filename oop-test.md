@@ -1,4 +1,4 @@
-Sure! Here is a clean Markdown code block containing the full README section so you can copy & paste directly int# 📘 Java OOP — Exam Revision (Class, Object, Encapsulation, Inheritance)
+# 📘 Java OOP — Exam Revision (Class, Object, Encapsulation, Inheritance)
 
 A compact summary of essential OOP topics for exam preparation.  
 Covers: **Class, Object, Constructors, Encapsulation, Access Modifiers, Inheritance, Method Overriding, this, super**.
@@ -212,14 +212,3 @@ An object becomes eligible for GC when no reference points to it.
 
 Employee e = new Employee();
 e = null; // ready for GC
-
-
----
-
-✅ End of README
-
-Good luck on your exam! 🚀
-
----
-
-If you want a shorter / cleaner / more advanced version, I can generate that too.
